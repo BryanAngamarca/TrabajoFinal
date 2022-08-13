@@ -52,10 +52,7 @@ public class controladorGerente extends AdaptadorDao<Gerente> {
         while (re.next()) {
             a = (Integer) re.getInt(1);
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 864d4ad234987476f04eb17ab89fd41b9dc376a5
         PreparedStatement stmt2 = getConexion().prepareStatement(comando + (a + 1) + "," + id_est + "," + id_Pof);
         stmt2.executeUpdate();
         JOptionPane.showMessageDialog(null, "asignado correctamente");
@@ -81,8 +78,6 @@ public class controladorGerente extends AdaptadorDao<Gerente> {
         commit();
     }
 
-<<<<<<< HEAD
-=======
     public static void main(String[] args) throws SQLException {
         controladorGerente c = new controladorGerente();
         // precio//
@@ -90,5 +85,4 @@ public class controladorGerente extends AdaptadorDao<Gerente> {
         Catalogos ca = new Catalogos(0, 70, 20, "Matematicas");
         c.crearCatalogo(ca);
     }
->>>>>>> 864d4ad234987476f04eb17ab89fd41b9dc376a5
 }
