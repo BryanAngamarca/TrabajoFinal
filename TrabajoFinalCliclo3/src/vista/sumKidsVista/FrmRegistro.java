@@ -68,9 +68,6 @@ public class FrmRegistro extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(30, 10, 249, 32);
 
-<<<<<<< HEAD
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/fondo.jpg"))); // NOI18N
-=======
         btnAtras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/door.png"))); // NOI18N
         btnAtras.setText("Atrás");
@@ -89,7 +86,6 @@ public class FrmRegistro extends javax.swing.JFrame {
         jButton1.setBounds(100, 170, 190, 30);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/screen3.jpg"))); // NOI18N
->>>>>>> ade339f4df850f82be1f9b6608aacbd097cf146a
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 330, 180);
 
@@ -98,22 +94,18 @@ public class FrmRegistro extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-<<<<<<< HEAD
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 324, javax.swing.GroupLayout.PREFERRED_SIZE)
-=======
+
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
->>>>>>> ade339f4df850f82be1f9b6608aacbd097cf146a
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< HEAD
+
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
-=======
+
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 267, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
->>>>>>> ade339f4df850f82be1f9b6608aacbd097cf146a
         );
 
         pack();
