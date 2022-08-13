@@ -58,6 +58,10 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel6 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -117,6 +121,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel3.setOpaque(false);
         jPanel3.setLayout(null);
 
+        cmdAgregar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmdAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/add.png"))); // NOI18N
         cmdAgregar.setText("Agregar");
         cmdAgregar.setToolTipText("Agregar");
@@ -124,6 +129,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel3.add(cmdAgregar);
         cmdAgregar.setBounds(10, 20, 120, 25);
 
+        cmdActualizar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmdActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/edit.png"))); // NOI18N
         cmdActualizar.setText("Editar");
         cmdActualizar.setToolTipText("Editar");
@@ -131,6 +137,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel3.add(cmdActualizar);
         cmdActualizar.setBounds(10, 60, 120, 25);
 
+        cmdNuevo.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmdNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/door.png"))); // NOI18N
         cmdNuevo.setText("Cancelar");
         cmdNuevo.setToolTipText("Nuevo");
@@ -138,6 +145,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel3.add(cmdNuevo);
         cmdNuevo.setBounds(10, 140, 120, 25);
 
+        cmdEliminar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cmdEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/del.png"))); // NOI18N
         cmdEliminar.setText("Eliminar");
         cmdEliminar.setToolTipText("Eliminar");
@@ -161,6 +169,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel2.add(txtRepresentante);
         txtRepresentante.setBounds(120, 210, 160, 30);
 
+        tbnEscoger.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         tbnEscoger.setText("Escoger");
         tbnEscoger.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -188,6 +197,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jPanel2.add(jLabel10);
         jLabel10.setBounds(30, 250, 90, 40);
 
+        btnAtras.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         btnAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/door.png"))); // NOI18N
         btnAtras.setText("Atrás");
         btnAtras.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +206,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnAtras);
-        btnAtras.setBounds(420, 240, 90, 25);
+        btnAtras.setBounds(420, 260, 90, 25);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(10, 10, 520, 300);
@@ -224,16 +234,34 @@ public class FrmEstudiante extends javax.swing.JFrame {
         jScrollPane1.setBounds(17, 38, 474, 114);
 
         jPanel4.add(jPanel5);
-        jPanel5.setBounds(20, 440, 520, 170);
+        jPanel5.setBounds(20, 510, 520, 170);
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Logo (1).jpg"))); // NOI18N
         jPanel4.add(jLabel6);
-        jLabel6.setBounds(260, 20, 210, 70);
+        jLabel6.setBounds(260, 20, 200, 70);
+
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Buscar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel6.setLayout(null);
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/find.png"))); // NOI18N
+        jButton1.setText("Buscar");
+        jPanel6.add(jButton1);
+        jButton1.setBounds(390, 20, 110, 30);
+        jPanel6.add(jTextField1);
+        jTextField1.setBounds(200, 20, 160, 30);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Identificacion", "nombre" }));
+        jPanel6.add(jComboBox1);
+        jComboBox1.setBounds(60, 20, 100, 30);
+
+        jPanel4.add(jPanel6);
+        jPanel6.setBounds(10, 430, 540, 70);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/1939.jpg"))); // NOI18N
         jLabel7.setOpaque(true);
         jPanel4.add(jLabel7);
-        jLabel7.setBounds(0, 0, 600, 640);
+        jLabel7.setBounds(0, 0, 600, 690);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -243,7 +271,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 644, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 691, Short.MAX_VALUE)
         );
 
         pack();
@@ -301,6 +329,8 @@ public class FrmEstudiante extends javax.swing.JFrame {
     private javax.swing.JButton cmdAgregar;
     private javax.swing.JButton cmdEliminar;
     private javax.swing.JButton cmdNuevo;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -316,8 +346,10 @@ public class FrmEstudiante extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JButton tbnEscoger;
     private javax.swing.JTextField txtDireccion;
     private javax.swing.JTextField txtFono;

@@ -15,6 +15,8 @@ public class FrmMetodosRepresentante extends javax.swing.JFrame {
      */
     public FrmMetodosRepresentante() {
         initComponents();
+        this.setTitle("Buscar Representante");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLabel3, "src/vista/imagenes/Fondo3.jpeg");
         this.setLocationRelativeTo(null);
     }
 
@@ -45,20 +47,22 @@ public class FrmMetodosRepresentante extends javax.swing.JFrame {
 
         jPanel3.setLayout(null);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 3), "Buscar Representante", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 18))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2), "Buscar Representante", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+        jPanel1.setOpaque(false);
         jPanel1.setLayout(null);
         jPanel1.add(jTextField1);
-        jTextField1.setBounds(20, 40, 129, 20);
+        jTextField1.setBounds(20, 40, 129, 30);
 
         jButton1.setText("Buscar");
         jPanel1.add(jButton1);
-        jButton1.setBounds(170, 40, 80, 23);
+        jButton1.setBounds(170, 40, 80, 30);
 
         jButton2.setText("Agregar");
         jPanel1.add(jButton2);
-        jButton2.setBounds(270, 40, 80, 23);
+        jButton2.setBounds(270, 40, 80, 30);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Lista de Representantes", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel2.setOpaque(false);
         jPanel2.setLayout(null);
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -75,7 +79,7 @@ public class FrmMetodosRepresentante extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jPanel2.add(jScrollPane1);
-        jScrollPane1.setBounds(40, 20, 350, 120);
+        jScrollPane1.setBounds(20, 20, 350, 120);
 
         jPanel1.add(jPanel2);
         jPanel2.setBounds(20, 80, 410, 160);
@@ -88,12 +92,12 @@ public class FrmMetodosRepresentante extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnAtras);
-        btnAtras.setBounds(360, 40, 90, 25);
+        btnAtras.setBounds(360, 40, 90, 30);
 
         jPanel3.add(jPanel1);
         jPanel1.setBounds(10, 20, 470, 255);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/fondosd.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/Fondo3.jpeg"))); // NOI18N
         jLabel3.setText("jLabel3");
         jPanel3.add(jLabel3);
         jLabel3.setBounds(0, 0, 490, 290);

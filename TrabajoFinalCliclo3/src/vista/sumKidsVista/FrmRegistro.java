@@ -15,7 +15,10 @@ public class FrmRegistro extends javax.swing.JFrame {
      */
     public FrmRegistro() {
         initComponents();
+        this.setTitle("Menú");
+        rsscalelabel.RSScaleLabel.setScaleLabel(jLabel1, "src/vista/imagenes/fondor.jpg");
         this.setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -44,6 +47,7 @@ public class FrmRegistro extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
+        btnProfesor.setBackground(new java.awt.Color(153, 153, 153));
         btnProfesor.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btnProfesor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/new.png"))); // NOI18N
         btnProfesor.setText("Registrar Profesor");
@@ -55,6 +59,7 @@ public class FrmRegistro extends javax.swing.JFrame {
         jPanel1.add(btnProfesor);
         btnProfesor.setBounds(100, 70, 190, 30);
 
+        btnEstudiante.setBackground(new java.awt.Color(153, 153, 153));
         btnEstudiante.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         btnEstudiante.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/new.png"))); // NOI18N
         btnEstudiante.setText("Registrar Estudiante");
@@ -68,12 +73,12 @@ public class FrmRegistro extends javax.swing.JFrame {
 
         jLabel5.setBackground(new java.awt.Color(255, 51, 51));
         jLabel5.setFont(new java.awt.Font("Serif", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Registro de Información");
+        jLabel5.setText("Menú de Opciones");
         jLabel5.setBorder(javax.swing.BorderFactory.createEtchedBorder(java.awt.Color.white, java.awt.Color.darkGray));
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(70, 10, 253, 36);
+        jLabel5.setBounds(90, 20, 210, 36);
 
+        btnAtras.setBackground(new java.awt.Color(153, 153, 153));
         btnAtras.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         btnAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/door.png"))); // NOI18N
         btnAtras.setText("Atrás");
@@ -83,15 +88,16 @@ public class FrmRegistro extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnAtras);
-        btnAtras.setBounds(300, 230, 130, 25);
+        btnAtras.setBounds(300, 225, 130, 30);
 
+        jButton1.setBackground(new java.awt.Color(153, 153, 153));
         jButton1.setFont(new java.awt.Font("Cambria", 1, 14)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/new.png"))); // NOI18N
         jButton1.setText("Facturar");
         jPanel1.add(jButton1);
         jButton1.setBounds(100, 170, 190, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/screen3.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/imagenes/fondor.jpg"))); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 450, 270);
 
